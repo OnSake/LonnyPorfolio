@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  list-style: none;
+  text-decoration: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Poppins";
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  background: transparent;
+
+}
+
+.header .nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .nav .nav_logo{
+  font-family: "Rock Salt";
+  color: #fff;
+  font-size: 25px;
+  margin-left: 55px;
+  cursor: pointer;
+}
+
+.header .nav .nav_list{
+  margin: 35px 90px;
+  display: flex;
+  gap: 100px;
+}
+
+.header .nav .nav_list .nav_item{
+  font-size: 25px;
+  color: #fff;
+}
+
+.header .nav .nav_list .bborder{
+  width: 61px;
+  height: 7px;
+  background: linear-gradient(90deg, #EEC600, #FF6F00);
+  border-radius: 0 10px 10px 0;
+  margin-top: 0;
+  transition: .3s ease-out;
+}
+
+.header .nav .nav_item:hover .bborder{
+  width: 100%;
+}
+
+
+/* Home Section */
+
+.home_section{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/assets/img/pexels-paul-deetman-2960891.jpg);
+  background-size: 105%;
+  background-position: center;
+  display: flex;
+}
+
+.home_section .home_nav{
+  position: absolute;
+  width: 76px;
+  height: 400px;
+  top: 170px;
+  right: 35px;
+  background: linear-gradient(#EEC600, #FF6F00);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.home_section .home_nav .nav_item{
+  color: #000;
+  cursor: pointer;
+}
+
+.home_section .home_nav .nav_item i{
+  font-size: 40px;
+  transition: .3s;
+}
+
+.home_section .home_nav .nav_item:hover i{
+  transform: translateY(-10px);
+}
+
+.home_section .home_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_section .home_title h1{
+  color: #fff;
+  font-size: 64px;
+  top: 70%;
+  left: 50%;
+  transform: translateX(50%);
+}
+
+.home_section .home_title span{
+  font-size: 84px;
+  background: linear-gradient(90deg, #EEC600, #FF6F00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home_section .home_button{
+  position: absolute;
+  width: 340px;
+  height: 100px;
+  background: linear-gradient(90deg, #EEC600, #FF6F00);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 85px;
+  transition: .4s;
+}
+
+.home_section .home_button h2{
+    color: #fff;
+    font-size: 40px;
+}
+
+.home_section .home_button:hover{
+  box-shadow: 0px 15px 35px #FF7300;
+}
